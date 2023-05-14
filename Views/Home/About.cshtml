@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<html>
+<style>
+    body {
+        font: 20px Montserrat, sans-serif;
+        line-height: 1.8;
+        color: #f5f6f7;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .margin {
+        margin-bottom: 45px;
+    }
+
+    .bg-1 {
+        background-color: #1abc9c; /* Green */
+        color: #ffffff;
+    }
+
+    .bg-2 {
+        background-color: #474e5d; /* Dark Blue */
+        color: #ffffff;
+    }
+
+    .bg-3 {
+        background-color: #ffffff; /* White */
+        color: #555555;
+    }
+
+    .bg-4 {
+        background-color: #2f2f2f; /* Black Gray */
+        color: #fff;
+    }
+
+    .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+  
+</style>
+</head>
+<body>
+
+  
+
+    <!-- First Container -->
+    <div class="container-fluid bg-1 text-center">
+        <h3 class="margin">Cine suntem noi?</h3>
+        <img src="~/Content/img/img3.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Image" width="350" height="350">
+        <h3>Suntem echipa care te ajuta sa te dezvolti!</h3>
+    </div>
+
+    <!-- Second Container -->
+    <div class="container-fluid bg-2 text-center">
+        <h3 class="margin">Afla mai multe</h3>
+        <p>Platforma noastra de e-Learning ofera posibilitati enorme privind dezvoltarea personala. </p>
+        <a href="#" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-search"></span> Search
+        </a>
+    </div>
+
+    <!-- Third Container (Grid) -->
+    <div class="container-fluid bg-3 text-center">
+        <h3 class="margin">Ce iti oferim</h3><br>
+        <div class="row">
+            <div class="col-sm-4">
+                <p>O multitudine de materiale educationale. Posibilitati nenumarate privind dezvoltarea ta. </p>
+                <img src="~/Content/img/img8.png" class="img-responsive margin" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-4">
+                <p>Suntem aici pentru tine!</p>
+                <img src="~/Content/img/img5.png" class="img-responsive margin" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-4">
+                <p>Alege sa devii mai bun.</p>
+                <img src="~/Content/img/img2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center">
+        <p><a>dupascoala@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
+
+

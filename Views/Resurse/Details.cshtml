@@ -1,0 +1,42 @@
+﻿@model eLearning.Models.Resurse
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Resurse</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Subiect)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subiect)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Continut)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Continut)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comentarii)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comentarii)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ResurseId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

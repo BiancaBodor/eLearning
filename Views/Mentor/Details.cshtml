@@ -1,0 +1,66 @@
+﻿@model eLearning.Models.Mentor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Mentor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeMentor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeMentor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrenumeMentor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrenumeMentor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nivel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nivel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descriere)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descriere)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MentorId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

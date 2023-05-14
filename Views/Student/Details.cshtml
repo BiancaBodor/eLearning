@@ -1,0 +1,42 @@
+﻿@model eLearning.Models.Student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeStudent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeStudent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrenumeStudent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrenumeStudent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NivelStudii)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NivelStudii)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.StudentId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

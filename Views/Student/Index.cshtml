@@ -1,0 +1,45 @@
+﻿@model IEnumerable<eLearning.Models.Student>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeStudent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PrenumeStudent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NivelStudii)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeStudent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrenumeStudent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NivelStudii)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.StudentId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.StudentId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.StudentId })
+        </td>
+    </tr>
+}
+
+</table>
